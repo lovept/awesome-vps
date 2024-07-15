@@ -1,2 +1,2 @@
 # awesome-vps
-What can VPS do
+What can VPS do ?
