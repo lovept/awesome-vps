@@ -2,13 +2,11 @@ version: "3.8"
 
 services: 
   memos:
-    image: neosmemo/memos:latest
+    image: neosmemo/memos:0.18.0
     container_name: memos
     restart: always
     environment: 
       - MEMOS_DRIVER=mysql
-      - MEMOS_DSN=your_username:your_password@tcp(database_host:port)/memos
+      - MEMOS_DSN=your_username:your_password@tcp(database_ip:port)/your_database_name
     ports:
       - 5230:5230
-    volumes:
-      - ~/.memos/:/var/opt/memos
