@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  shorturl:
+    image: ellermister/shourturl
+    container_name: shorturl
+    ports:
+      - 5001:80
+    restart: always
