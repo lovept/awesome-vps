@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  shlink-web-client:
+    image: shlinkio/shlink-web-client
+    restart: always
+    container_name: shlink-web-client
+    ports:
+      - 8080:80
+    environment:
+      - SHLINK_SERVER_URL=your_shlink_server_url
+      - SHLINK_SERVER_API_KEY=your_shlink_key
