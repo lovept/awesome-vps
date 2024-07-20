@@ -1,0 +1,10 @@
+version: "3.8"
+
+services: 
+  memogram:
+    image: rammiah/memogram
+    container_name: memogram
+    restart: always
+    environment:
+      - SERVER_ADDR=dns:your_memos_ip:your_memos_port
+      - BOT_TOKEN=your_bot_token
