@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  easyimage:
+    image: ddsderek/easyimage
+    container_name: easyimage
+    restart: unless-stopped
+    ports:
+      - 5002:80
+    environment:
+      - TZ=Asia/Shanghai
+      - PUID=1000
+      - PGID=1000
+      - DEBUG=false
+    volumes:
+      - './config:/app/web/config'
+      - './data/i:/app/web/i'
