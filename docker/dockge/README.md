@@ -1,0 +1,1 @@
+`mkdir -p /root/docker/dockge/stacks /root/docker/dockge && cd /root/docker/dockge && curl "https://dockge.kuma.pet/compose.yaml?port=5001&stacksPath=/root/docker/dockge/stacks" --output compose.yaml && docker-compose up -d`
