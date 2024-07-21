@@ -5,5 +5,5 @@ services:
     image: ellermister/shourturl
     container_name: shorturl
     ports:
-      - 5001:80
+      - 5002:80
     restart: always
