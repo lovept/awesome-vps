@@ -1,0 +1,1 @@
+`mkdir -p /root/docker/pingvin-share && cd /root/docker/pingvin-share && curl https://raw.githubusercontent.com/stonith404/pingvin-share/main/docker-compose.yml -o docker-compose.yml && docker compose up -d`
