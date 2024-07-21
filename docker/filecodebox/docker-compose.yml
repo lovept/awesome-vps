@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  filecodebox:
+    image: lanol/filecodebox:beta
+    container_name: filecodebox
+    restart: always
+    ports:
+      - 5003:12345
+    #volumes:
+    # - /root/docker/filecodebox/data=/app/data
