@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  halo:
+    image: halohub/halo:2
+    container_name: halo
+    restart: on-failure:3
+    ports:
+      - "8090:8090"
+    command:
+      - --spring.r2dbc.url=r2dbc:pool:mysql://your_db_host:your_db_port/your_db_name
+      - --spring.r2dbc.username=your_db_username
+      - --spring.r2dbc.password=your_db_password
+      - --spring.sql.init.platform=mysql
+      - --halo.external-url=https://your_domain
