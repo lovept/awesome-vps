@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  filebrowser:
+    image: filebrowser/filebrowser
+    container_name: filebrowser
+    ports:
+      - "5004:80"
+    volumes:
+      - /root/filebrowser:/srv
+      - ${PWD}/filebrowser.db:/database.db
