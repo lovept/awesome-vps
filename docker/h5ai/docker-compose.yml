@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  h5ai:
+    image: awesometic/h5ai
+    container_name: h5ai
+    restart: unless-stopped
+    ports:
+      - "5005:80"
+    volumes:
+      - "/root/h5ai:/h5ai"
+      - "${PWD}/config:/config"
+    environment:
+      - TZ=Asia/Shanghai
